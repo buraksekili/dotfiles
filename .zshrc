@@ -4,8 +4,11 @@
 # Path to your oh-my-zsh installation.
 export ZSH="/home/burak/.oh-my-zsh"
 export GOPATH=/home/burak/go
-export PATH=$PATH:$GOPATH
-export PATH=$PATH:$GOPATH/bin
+export GOBIN=/home/burak/go/bin
+
+export PATH=$PATH:$GOBIN
+# export PATH=$PATH:$GOPATH
+# export PATH=$PATH:$GOPATH/bin
 
 # https://stackoverflow.com/questions/3446320/in-vim-how-to-map-save-to-ctrl-s
 # enable control-s and control-q

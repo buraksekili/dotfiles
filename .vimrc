@@ -14,17 +14,21 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'itchyny/vim-gitbranch'
 Plugin 'rhysd/vim-clang-format'
+Plugin 'fatih/vim-go'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Plugins settings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+filetype plugin indent on
+autocmd FileType go nmap <c-s> :GoImports<Esc>
 
 let g:airline_theme='wombat'
 let g:airline_section_b = '%{gitbranch#name()}'
 
+let g:clang_format#code_style = "chromium"
+let g:clang_format#code_style = "chromium"
 
 " ClangFormatter settings for cpp
-let g:clang_format#code_style = "chromium"
 let g:clang_format#style_options = {
 			\ "TabWidth": 4, 
 			\ "IndentWidth": 4,
@@ -44,7 +48,6 @@ autocmd FileType c,cpp,objc vnoremap <buffer><Leader>cf :ClangFormat<CR>
 
 autocmd FileType c ClangFormatAutoEnable
 autocmd FileType cpp ClangFormatAutoEnable
-
 
 call vundle#end()            " required
 
