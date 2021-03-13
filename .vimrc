@@ -22,9 +22,29 @@ Plugin 'rhysd/vim-clang-format'
 let g:airline_theme='wombat'
 let g:airline_section_b = '%{gitbranch#name()}'
 
+
+" ClangFormatter settings for cpp
+let g:clang_format#code_style = "chromium"
 let g:clang_format#style_options = {
-            \ "IndentWidth" : "4"}
-let g:clang_format#auto_format=1
+			\ "TabWidth": 4, 
+			\ "IndentWidth": 4,
+			\ "ColumnLimit": 100,
+			\ "AllowAllParametersOfDeclarationOnNextLine": "false",
+			\ "BreakBeforeBraces": "Custom",
+			\ "BraceWrapping": {
+					\ "SplitEmptyFunction": "false",
+					\ "AfterCaseLabel": "false" },
+			\ "AlignAfterOpenBracket": "false",
+			\ "AlignConsecutiveAssignments": "true"}
+
+" map to <Leader>cf in C++ code
+autocmd FileType c,cpp,objc nnoremap <buffer><Leader>cf :<C-u>ClangFormat<CR>
+autocmd FileType c,cpp,objc vnoremap <buffer><Leader>cf :ClangFormat<CR>
+
+
+autocmd FileType c ClangFormatAutoEnable
+autocmd FileType cpp ClangFormatAutoEnable
+
 
 call vundle#end()            " required
 
@@ -65,7 +85,6 @@ set smarttab
 
 set shiftwidth=4
 set tabstop=4
-
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Searching
