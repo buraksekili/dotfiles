@@ -15,6 +15,7 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'itchyny/vim-gitbranch'
 Plugin 'rhysd/vim-clang-format'
 Plugin 'fatih/vim-go'
+Plugin 'scrooloose/nerdtree'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Plugins settings
@@ -80,6 +81,14 @@ nnoremap <C-k> O<Esc>
 nnoremap <F3> :source ~/.vimrc<Esc>
 
 nmap Q <Nop> " 'Q' in normal mode enters Ex mode. You almost never want this.
+
+" Switch tabs with H and L
+nnoremap H gT
+nnoremap L gt
+
+" Toggle NERDTree window 
+map <c-b> :NERDTreeToggle <CR>
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Indentation
