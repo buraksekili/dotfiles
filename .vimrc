@@ -16,6 +16,7 @@ Plugin 'itchyny/vim-gitbranch'
 Plugin 'rhysd/vim-clang-format'
 Plugin 'fatih/vim-go'
 Plugin 'scrooloose/nerdtree'
+Plugin 'vim-scripts/AutoComplPop'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Plugins settings
@@ -23,11 +24,12 @@ Plugin 'scrooloose/nerdtree'
 filetype plugin indent on
 autocmd FileType go nmap <c-s> :GoImports<Esc>
 
+let g:acp_completeoptPreview = 1
+
 let g:airline_theme='wombat'
 let g:airline_section_b = '%{gitbranch#name()}'
 
-let g:clang_format#code_style = "chromium"
-let g:clang_format#code_style = "chromium"
+let g:clang_format#code_style = "google"
 
 " ClangFormatter settings for cpp
 let g:clang_format#style_options = {
@@ -86,6 +88,8 @@ nmap Q <Nop> " 'Q' in normal mode enters Ex mode. You almost never want this.
 nnoremap H gT
 nnoremap L gt
 
+inoremap <C-@> <C-x><C-o>
+
 " Toggle NERDTree window 
 map <c-b> :NERDTreeToggle <CR>
 
@@ -104,13 +108,14 @@ set tabstop=4
 set ignorecase
 set smartcase
 set incsearch
-set mouse+=a
+se mouse+=a
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Font & Theme
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 colorscheme badwolf
+set background=dark
 syntax on
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
