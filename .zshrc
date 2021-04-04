@@ -112,8 +112,15 @@ source $ZSH/oh-my-zsh.sh
 #
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
+#
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias rm='echo "rm is disabled, use safe-trash or mv."'
-alias gss="git status"
-alias open='xdg-open'
 
+
+# ALIAS for Git 
+alias gss="git status"
+alias glo="git log --all --graph --decorate --oneline"
+
+# ALIAS for Ubuntu  
+alias open='xdg-open'
+alias t="tree -I 'node_modules'"
