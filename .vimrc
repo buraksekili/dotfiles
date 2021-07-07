@@ -33,8 +33,8 @@ let g:clang_format#code_style = "google"
 
 " ClangFormatter settings for cpp
 let g:clang_format#style_options = {
-			\ "TabWidth": 4, 
-			\ "IndentWidth": 4,
+			\ "TabWidth": 2, 
+			\ "IndentWidth": 2,
 			\ "ColumnLimit": 100,
 			\ "AllowAllParametersOfDeclarationOnNextLine": "false",
 			\ "BreakBeforeBraces": "Custom",
@@ -84,6 +84,9 @@ nnoremap <F3> :source ~/.vimrc<Esc>
 
 nmap Q <Nop> " 'Q' in normal mode enters Ex mode. You almost never want this.
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" NERDTree shortcuts
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Switch tabs with H and L
 nnoremap H gT
 nnoremap L gt
@@ -108,7 +111,7 @@ set tabstop=4
 set ignorecase
 set smartcase
 set incsearch
-se mouse+=a
+set mouse+=a
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

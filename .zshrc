@@ -5,10 +5,15 @@
 export ZSH="/home/burak/.oh-my-zsh"
 export GOPATH=/home/burak/go
 export GOBIN=/home/burak/go/bin
+export GOROOT=/usr/local/go
+# export GOROOT=/home/burak/go
 
 export PATH=$PATH:$GOBIN
 # export PATH=$PATH:$GOPATH
 # export PATH=$PATH:$GOPATH/bin
+
+export VISUAL=vim
+export EDITOR="$VISUAL"
 
 # https://stackoverflow.com/questions/3446320/in-vim-how-to-map-save-to-ctrl-s
 # enable control-s and control-q
@@ -112,15 +117,9 @@ source $ZSH/oh-my-zsh.sh
 #
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
-#
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias rm='echo "rm is disabled, use safe-trash or mv."'
-
-
-# ALIAS for Git 
 alias gss="git status"
 alias glo="git log --all --graph --decorate --oneline"
-
-# ALIAS for Ubuntu  
 alias open='xdg-open'
 alias t="tree -I 'node_modules'"
