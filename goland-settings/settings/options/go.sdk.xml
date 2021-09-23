@@ -1,0 +1,13 @@
+<application>
+  <component name="GoSdkList">
+    <sdk-path>
+      <set>
+        <option value="" />
+        <option value="$USER_HOME$/go/go1.17" />
+        <option value="$USER_HOME$/go/go1.17.1" />
+        <option value="$USER_HOME$/go/go1.17.1/go1.17.1" />
+        <option value="/usr/local/go" />
+      </set>
+    </sdk-path>
+  </component>
+</application>

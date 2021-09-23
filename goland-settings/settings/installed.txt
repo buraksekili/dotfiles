@@ -1,0 +1,5 @@
+IdeaVIM
+com.intellij.plugins.vscodekeymap
+idea.plugin.protoeditor
+name.kropp.intellij.makefile
+net.ashald.envfile

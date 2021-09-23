@@ -1,0 +1,135 @@
+<keymap version="1" name="VSCode copy" parent="VSCode">
+  <action id="$Redo">
+    <keyboard-shortcut first-keystroke="shift ctrl z" />
+    <keyboard-shortcut first-keystroke="shift alt back_space" />
+    <keyboard-shortcut first-keystroke="ctrl y" />
+  </action>
+  <action id="ActivateFavoritesToolWindow" />
+  <action id="ActivateFindToolWindow" />
+  <action id="ActivateProjectToolWindow">
+    <keyboard-shortcut first-keystroke="shift ctrl e" />
+    <keyboard-shortcut first-keystroke="ctrl b" />
+  </action>
+  <action id="ActivateTODOToolWindow" />
+  <action id="ActivateTerminalToolWindow">
+    <keyboard-shortcut first-keystroke="ctrl back_quote" />
+    <keyboard-shortcut first-keystroke="ctrl quotedbl" />
+  </action>
+  <action id="CloseActiveTab" />
+  <action id="CloseAllEditors" />
+  <action id="CloseContent">
+    <keyboard-shortcut first-keystroke="ctrl f4" />
+    <keyboard-shortcut first-keystroke="ctrl w" />
+  </action>
+  <action id="CloseProject" />
+  <action id="CollapseAllRegions">
+    <keyboard-shortcut first-keystroke="shift ctrl open_bracket" />
+  </action>
+  <action id="CollapseRegion">
+    <keyboard-shortcut first-keystroke="ctrl open_bracket" />
+  </action>
+  <action id="CollapseRegionRecursively" />
+  <action id="CommentByLineComment">
+    <keyboard-shortcut first-keystroke="ctrl slash" />
+  </action>
+  <action id="CompareClipboardWithSelection" />
+  <action id="DuplicatesForm.SendToLeft" />
+  <action id="DuplicatesForm.SendToRight" />
+  <action id="EditSourceInNewWindow" />
+  <action id="Editor Redo">
+    <keyboard-shortcut first-keystroke="ctrl y" />
+  </action>
+  <action id="EditorDecreaseFontSize">
+    <keyboard-shortcut first-keystroke="ctrl minus" />
+  </action>
+  <action id="EditorIncreaseFontSize">
+    <keyboard-shortcut first-keystroke="ctrl equals" />
+  </action>
+  <action id="EditorIndentLineOrSelection" />
+  <action id="EditorJoinLines" />
+  <action id="EditorResetFontSize">
+    <keyboard-shortcut first-keystroke="ctrl 0" />
+  </action>
+  <action id="EditorStartNewLine">
+    <keyboard-shortcut first-keystroke="ctrl enter" />
+    <keyboard-shortcut first-keystroke="ctrl j" />
+  </action>
+  <action id="EditorStartNewLineBefore">
+    <keyboard-shortcut first-keystroke="shift ctrl enter" />
+    <keyboard-shortcut first-keystroke="ctrl k" />
+  </action>
+  <action id="EditorUnindentSelection">
+    <keyboard-shortcut first-keystroke="shift tab" />
+  </action>
+  <action id="ExpandAllRegions">
+    <keyboard-shortcut first-keystroke="shift ctrl close_bracket" />
+  </action>
+  <action id="ExpandRegion">
+    <keyboard-shortcut first-keystroke="shift ctrl close_bracket" />
+    <keyboard-shortcut first-keystroke="ctrl close_bracket" />
+  </action>
+  <action id="ExpandRegionRecursively" />
+  <action id="FileChooser.GotoHome" />
+  <action id="FileChooser.GotoModule" />
+  <action id="FileChooser.GotoProject" />
+  <action id="FileChooser.NewFile" />
+  <action id="GoToTab1">
+    <keyboard-shortcut first-keystroke="alt 1" />
+    <keyboard-shortcut first-keystroke="ctrl 1" />
+  </action>
+  <action id="GoToTab2">
+    <keyboard-shortcut first-keystroke="ctrl 2" />
+    <keyboard-shortcut first-keystroke="alt 2" />
+  </action>
+  <action id="GoToTab3">
+    <keyboard-shortcut first-keystroke="ctrl 3" />
+    <keyboard-shortcut first-keystroke="alt 3" />
+  </action>
+  <action id="GoToTab4">
+    <keyboard-shortcut first-keystroke="ctrl 4" />
+    <keyboard-shortcut first-keystroke="alt 4" />
+  </action>
+  <action id="GoToTab5">
+    <keyboard-shortcut first-keystroke="ctrl 5" />
+    <keyboard-shortcut first-keystroke="alt 5" />
+  </action>
+  <action id="GoToTab6">
+    <keyboard-shortcut first-keystroke="ctrl 6" />
+    <keyboard-shortcut first-keystroke="alt 6" />
+  </action>
+  <action id="GotoBookmark0" />
+  <action id="GotoBookmark1" />
+  <action id="GotoBookmark2" />
+  <action id="GotoBookmark3" />
+  <action id="GotoBookmark4" />
+  <action id="GotoBookmark5" />
+  <action id="GotoBookmark6" />
+  <action id="Help.KeymapReference" />
+  <action id="HideSideWindows" />
+  <action id="JumpToLastChange" />
+  <action id="MoveTabRight" />
+  <action id="NewDir">
+    <keyboard-shortcut first-keystroke="shift ctrl n" />
+  </action>
+  <action id="NewFile">
+    <keyboard-shortcut first-keystroke="ctrl n" />
+  </action>
+  <action id="NextSplitter" />
+  <action id="PrevSplitter" />
+  <action id="QuickChangeScheme" />
+  <action id="RevealIn" />
+  <action id="SaveAll">
+    <keyboard-shortcut first-keystroke="ctrl s" />
+  </action>
+  <action id="Terminal.NextSplitter">
+    <keyboard-shortcut first-keystroke="alt right" second-keystroke="alt released right" />
+  </action>
+  <action id="Terminal.PrevSplitter">
+    <keyboard-shortcut first-keystroke="alt left" />
+  </action>
+  <action id="ToggleDistractionFreeMode" />
+  <action id="Tool_External Tools_golint">
+    <keyboard-shortcut first-keystroke="ctrl s" />
+  </action>
+  <action id="org.intellij.plugins.markdown.ui.actions.editorLayout.EditorAndPreviewLayoutChangeAction" />
+</keymap>
