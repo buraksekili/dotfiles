@@ -2,4 +2,4 @@
 - config.yaml > root of the project
 - httpbin-versioned.yaml > config/samples/httpbin.yaml
 
-![goland-support](./goland-support.gif)
+![goland-support](./goland-ide-support_AdobeExpress.gif)
