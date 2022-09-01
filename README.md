@@ -4,10 +4,4 @@
 
 ## 1
 
-![goland-support](./goland-ide-support_AdobeExpress.gif)
-
-## 2
-![goland-support](./goland-ide-support_AdobeExpress2.gif)
-
-## 3
-![goland-support](./goland-ide-support_AdobeExpress3.gif)
+change
