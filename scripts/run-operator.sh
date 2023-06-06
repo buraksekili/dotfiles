@@ -1,6 +1,6 @@
 # This script runs Tyk Operator locally based on k8s secret created for Tyk Operator.
 #
-#	./run.sh
+#	./run-operator.sh
 
 auth=$(kubectl get secrets -n tyk-operator-system tyk-operator-conf --template={{.data.TYK_AUTH}} | base64 -d)
 org=$(kubectl get secrets -n tyk-operator-system tyk-operator-conf --template={{.data.TYK_ORG}} | base64 -d)
