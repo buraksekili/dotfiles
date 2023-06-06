@@ -1,3 +1,0 @@
-<keymap version="1" name="Sublime Text copy" parent="Sublime Text">
-  <action id="CommentByLineComment" />
-</keymap>
