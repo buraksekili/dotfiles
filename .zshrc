@@ -14,9 +14,6 @@ export PATH=$PATH:$GOBIN:$LOCCHROMEDRIVER
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-#
-# (buraksekili): For custom theme doc: https://blog.carbonfive.com/writing-zsh-themes-a-quickref/
-#
 # ZSH_THEME="robbyrussell"
 # ZSH_THEME="buraks"
 # ZSH_THEME=geoffgarside
@@ -112,10 +109,17 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias gs="git status"
 alias gss="git status"
+alias gc="git commit -s"
 alias glo="git log --all --graph --decorate --oneline"
 alias t="tree -I 'node_modules'"
 alias k=kubectl
+alias p=python3
+alias kw=' watch kubectl get po,svc -n '
+alias dc='docker container ls'
+alias di='docker images'
+alias c='bat -pp'
 alias go119="/usr/local/go/bin/go"
 compdef __start_kubectl k
 source <(kubectl completion zsh)
@@ -123,3 +127,9 @@ source <(helm completion zsh)
 
 # Fig post block. Keep at the bottom of this file.
 [[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.post.zsh"
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

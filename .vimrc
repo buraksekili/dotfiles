@@ -33,4 +33,3 @@ set laststatus=2
 set backspace=indent,eol,start
 set hidden
 set noerrorbells visualbell t_vb=
-
